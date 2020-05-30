@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="label">Loan Calculator</h1>
+                <form class="form-group" id="form-group">
+                    <div class="input-group">
+                        <span class="input group addon">Amount</span>
+                        <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
+                    </div>
+                    <div class="input-group">
+                        <span class="input group addon">Interest Rate</span>
+                        <input type="number" class="form-control" id="interest" placeholder="Interest">
+                    </div>
+                    <div class="input-group">
+                        <span class="input group addon">Time Taken</span>
+                        <input type="number" class="form-control" id="years" placeholder="years">
+                    </div>
+                    <button type="submit" value="Calculate">Calculate</button>
+                </form>
+                <form class="form-list" id="form-list">
+                    <div id="results">
+                        <h5>Results</h5>
+                        <div class="input-group">
+                            <span class="input group addon">Monthly Payment</span>
+                            <input type="number" class="form-control" id="monthly-payment" disabled>
+                        </div>
+                        <div class="input-group">
+                            <span class="input group addon">Total Payment</span>
+                            <input type="number" class="form-control" id="total-payment" disabled>
+                        </div>
+                        <div class="input-group">
+                            <span class="input group addon">Total Interest</span>
+                            <input type="number" class="form-control" id="total-interest" disabled>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
